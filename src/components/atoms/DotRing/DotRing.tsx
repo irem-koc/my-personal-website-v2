@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import useMousePosition from "../../hooks/useMousePosition";
-import { MouseContext } from "../../context/mouse-context.js";
+import useMousePosition from "../../../hooks/useMousePosition.js";
+import { MouseContext } from "../../../context/mouse-context.js";
 
 type Props = {};
 
