@@ -1,7 +1,11 @@
-type Props = {};
+import Text from "@/components/atoms/Text/Text";
 
-const LeftMenu = (props: Props) => {
-  return <div>LeftMenu</div>;
+const LeftMenu = () => {
+  return (
+    <div>
+      <Text text="hello" />
+    </div>
+  );
 };
 
 export default LeftMenu;

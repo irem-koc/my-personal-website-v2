@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import LeftMenu from "./components/organisms/leftMenu/LeftMenu";
+import LeftMenu from "./components/organisms/LeftMenu/LeftMenu";
 import ContextProvider from "./context/Context";
 
 function App() {
