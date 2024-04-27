@@ -10,8 +10,12 @@ const Footer = (props: Props) => {
   return (
     <div className="col-center">
       <div className="row-center gap-3 mb-7">
-        <Image alt="github" icon="FaGithub" style={["footer-icon"]} />
-        <Image alt="linkedin" icon="FaLinkedinIn " style={["footer-icon"]} />
+        <a href="https://github.com/irem-koc">
+          <Image alt="github" icon="FaGithub" style={["footer-icon"]} />
+        </a>
+        <a href="https://www.linkedin.com/in/koc-irem/">
+          <Image alt="linkedin" icon="FaLinkedinIn " style={["footer-icon"]} />
+        </a>
       </div>
       <Text text={text} secondaryText={secondaryText} style={["footer-text"]} />
     </div>

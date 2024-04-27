@@ -26,7 +26,7 @@
     @apply w-28 h-24 rounded-full border-[3px] border-purple;
   }
   .footer-icon {
-    @apply text-dark-blue p-[5px] bg-light-grey w-[30px] rounded-md h-fit;
+    @apply text-dark-blue p-[5px] bg-light-grey w-[30px] rounded-md h-fit cursor-pointer;
   }
   .footer-text {
     @apply leading-7;
