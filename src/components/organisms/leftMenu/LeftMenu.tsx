@@ -5,20 +5,26 @@ import Footer from "@molecules/LeftMenu/Footer/Footer";
 
 const LeftMenu = () => {
   return (
-    <div className="border-r w-1/5 h-screen ">
+    <div className="border-r w-1/5 h-screen">
       <div className="col-center">
         <div className="col-center">
-          <Image source={iremkoclogo} alt="logo" title="İrem Koç" />
-          <Text text="İrem Koç" />
-          <Text text="İrem Koç" />
-          <Text text="Home" />
+          <Image
+            source={iremkoclogo}
+            alt="logo"
+            title="İrem Koç"
+            style={["left-image"]}
+          />
+          <div className="relative">
+            <Text text="Irem Koc" style={["big-irem"]} />
+            <Text text="Irem Koc" style={["small-irem"]} />
+          </div>
         </div>
         <div className="col-center">
-          <Text text="Home" />
-          <Text text="About" />
-          <Text text="Experiences" />
-          <Text text="Portfolio" />
-          <Text text="Contact" />
+          <Text text="Home" style={["liste-item"]} />
+          <Text text="About" style={["liste-item"]} />
+          <Text text="Experiences" style={["liste-item"]} />
+          <Text text="Portfolio" style={["liste-item"]} />
+          <Text text="Contact" style={["liste-item"]} />
         </div>
         <div className="col-center">
           <Footer />

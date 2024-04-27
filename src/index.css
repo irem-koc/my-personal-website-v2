@@ -3,7 +3,22 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply text-grey;
+  }
+  .big-irem {
+    @apply font-neucha italic text-4xl text-custom-color mx-auto;
+  }
+  .small-irem {
+    @apply font-inter font-bold text-lg text-dark-blue absolute mx-auto left-1/4 top-2;
+  }
   .col-center {
     @apply flex flex-col items-center justify-between;
+  }
+  .liste-item {
+    @apply hover:text-purple cursor-pointer;
+  }
+  .left-image {
+    @apply w-28 h-28 rounded-full border-4 border-purple;
   }
 }

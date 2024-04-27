@@ -2,7 +2,20 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        neucha: ["Neucha", "cursive"],
+        inter: ["Inter", "sans-serif"],
+      },
+      colors: {
+        "custom-color": "rgba(19,15,73,0.07)",
+        grey: "#615E85",
+        purple: "#A5A6FF",
+        "dark-blue": "#130f49",
+        blue: "#0000FF",
+        orange: "#FF972D",
+      },
+    },
   },
   plugins: [],
 };
