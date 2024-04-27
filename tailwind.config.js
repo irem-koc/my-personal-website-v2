@@ -14,6 +14,7 @@ export default {
         "dark-blue": "#130f49",
         blue: "#0000FF",
         orange: "#FF972D",
+        "light-grey": "#F3F3F6",
       },
     },
   },

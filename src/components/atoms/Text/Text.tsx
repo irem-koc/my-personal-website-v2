@@ -1,10 +1,16 @@
 type Props = {
   text: string;
+  secondaryText?: string;
   style: string[];
 };
 const Text = (props: Props) => {
-  const { text, style } = props;
-  return <span className={style.join(" ")}>{text}</span>;
+  const { text, style, secondaryText } = props;
+  return (
+    <>
+      <span className={style.join(" ")}>{text}</span>
+      <span className={style.join(" ")}>{secondaryText}</span>
+    </>
+  );
 };
 
 export default Text;
