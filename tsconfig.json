@@ -22,10 +22,13 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/.": ["src/*"],
-      "@/assets/*": ["src/assets/*"],
-      "@/components/*": ["src/components/*"],
-      "@/atoms/*": ["src/components/atoms/*"],
-      "@/pages/*": ["src/pages/*"]
+      "@/route.": ["src/route*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@pages/*": ["src/pages/*"]
     }
   },
   "include": ["src"],
