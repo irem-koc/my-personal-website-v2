@@ -1,12 +1,13 @@
+import irem from "@assets/image.jpeg";
 import Button from "@atoms/Button/Button";
+import Image from "@atoms/Image/Image";
 import Text from "@atoms/Text/Text";
 import Title from "@atoms/Title/Title";
 import { Context } from "@context/Context";
 import React, { useContext } from "react";
 import TextTransition, { presets } from "react-text-transition";
-type Props = {};
 
-const Home = (props: Props) => {
+const Home = () => {
   const { name } = useContext(Context);
   const TEXTS = ["Coder", "Developer", "Engineer"];
   const [index, setIndex] = React.useState(0);
@@ -16,10 +17,11 @@ const Home = (props: Props) => {
       () => setIndex((index) => index + 1),
       3000 // every 3 seconds
     );
-    return () => clearTimeout(intervalId);
+    return () => clearInterval(intervalId);
   }, []);
+
   return (
-    <div className="p-32 bg-home-bg  w-full">
+    <div className="p-32 bg-home-bg w-full h-screen flex justify-between items-center">
       <div className="w-1/2 flex flex-col gap-6">
         <div>
           <Text text="Hi, I'm " style={["home-title"]} />
@@ -59,8 +61,20 @@ const Home = (props: Props) => {
             to="/contact"
           />
         </div>
+        <div className="pl-4 border-l-4 border-orange flex flex-col">
+          <Text text={"+90 553 975 3691"} style={["home-contact"]} />
+          <Text text={"kociremx@gmail.com"} style={["home-contact"]} />
+          <Text text={"Beylikduzu,Istanbul"} style={["home-contact"]} />
+        </div>
       </div>
-      <div></div>
+      <div className="hidden lg:block lg:w-1/3">
+        <Image
+          source={irem}
+          alt="irem koc"
+          title="me"
+          style={["rounded-full w-full"]}
+        />
+      </div>
     </div>
   );
 };

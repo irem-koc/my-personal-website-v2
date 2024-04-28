@@ -37,4 +37,7 @@
   .button {
     @apply px-10 py-3 rounded-md;
   }
+  .home-contact {
+    @apply text-dark-blue font-semibold leading-8;
+  }
 }

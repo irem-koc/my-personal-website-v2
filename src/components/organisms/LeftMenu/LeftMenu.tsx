@@ -1,10 +1,21 @@
 import iremkoclogo from "@assets/iremkoc-logo.png";
 import Image from "@atoms/Image/Image";
 import Text from "@components/atoms/Text/Text";
+import { Context } from "@context/Context";
 import Footer from "@molecules/LeftMenu/Footer/Footer";
-import { Link } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const LeftMenu = () => {
+  const { activeTab, setActiveTab } = useContext(Context);
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveTab(location.pathname);
+  }, [location.pathname, setActiveTab]);
+  useEffect(() => {
+    setActiveTab(location.pathname);
+  }, [setActiveTab]); // dependenciesiz
   return (
     <div className="border-r w-[300px] flex-shrink-0 h-screen p-8">
       <div className="flex flex-col justify-between h-full">
@@ -22,19 +33,46 @@ const LeftMenu = () => {
         </div>
         <div className="col-center gap-6">
           <Link to="/">
-            <Text text="Home" style={["liste-item"]} />
+            <Text
+              text="Home"
+              style={["liste-item", activeTab === "/" ? "text-purple" : ""]}
+            />
           </Link>
           <Link to="/about">
-            <Text text="About" style={["liste-item"]} />
+            <Text
+              text="About"
+              style={[
+                "liste-item",
+                activeTab === "/about" ? "text-purple" : "",
+              ]}
+            />
           </Link>
           <Link to="/experiences">
-            <Text text="Experiences" style={["liste-item"]} />
+            <Text
+              text="Experiences"
+              style={[
+                "liste-item",
+                activeTab === "/experiences" ? "text-purple" : "",
+              ]}
+            />
           </Link>
           <Link to="/portfolio">
-            <Text text="Portfolio" style={["liste-item"]} />
+            <Text
+              text="Portfolio"
+              style={[
+                "liste-item",
+                activeTab === "/portfolio" ? "text-purple" : "",
+              ]}
+            />
           </Link>
           <Link to="/contact">
-            <Text text="Contact" style={["liste-item"]} />
+            <Text
+              text="Contact"
+              style={[
+                "liste-item",
+                activeTab === "/contact" ? "text-purple" : "",
+              ]}
+            />
           </Link>
         </div>
         <Footer
