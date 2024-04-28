@@ -14,6 +14,7 @@ export default defineConfig({
       "@organisms": path.resolve(__dirname, "./src/components/organisms"),
       "@components": path.resolve(__dirname, "./src/components"),
       "@pages": path.resolve(__dirname, "./src/pages"),
+      "@context": path.resolve(__dirname, "./src/context"),
     },
   },
   plugins: [react()],

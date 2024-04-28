@@ -31,4 +31,10 @@
   .footer-text {
     @apply leading-7;
   }
+  .home-title {
+    @apply text-dark-blue text-5xl font-bold leading-tight;
+  }
+  .button {
+    @apply px-10 py-3 rounded-md;
+  }
 }

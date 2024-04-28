@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const LeftMenu = () => {
   return (
-    <div className="border-r w-1/5 h-screen p-8">
+    <div className="border-r w-[300px] flex-shrink-0 h-screen p-8">
       <div className="flex flex-col justify-between h-full">
         <div className="flex flex-col items-center">
           <Image

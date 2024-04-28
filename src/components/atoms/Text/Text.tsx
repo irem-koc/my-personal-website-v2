@@ -8,7 +8,9 @@ const Text = (props: Props) => {
   return (
     <>
       <span className={style.join(" ")}>{text}</span>
-      <span className={style.join(" ")}>{secondaryText}</span>
+      {secondaryText && (
+        <span className={style.join(" ")}>{secondaryText}</span>
+      )}
     </>
   );
 };

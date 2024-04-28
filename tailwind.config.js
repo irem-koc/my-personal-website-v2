@@ -15,6 +15,7 @@ export default {
         blue: "#0000FF",
         orange: "#FF972D",
         "light-grey": "#F3F3F6",
+        "home-bg": "#EFFBF8",
       },
     },
   },
