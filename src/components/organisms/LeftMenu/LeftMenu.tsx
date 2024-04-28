@@ -15,9 +15,9 @@ const LeftMenu = () => {
   }, [location.pathname, setActiveTab]);
   useEffect(() => {
     setActiveTab(location.pathname);
-  }, [setActiveTab]); // dependenciesiz
+  }, [setActiveTab, location]); // dependenciesiz
   return (
-    <div className="border-r w-[300px] flex-shrink-0 h-screen p-8">
+    <div className="border-r hidden md:block md:w-[300px] flex-shrink-0 h-screen p-8">
       <div className="flex flex-col justify-between h-full">
         <div className="flex flex-col items-center">
           <Image

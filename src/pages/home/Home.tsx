@@ -21,8 +21,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="p-32 bg-home-bg w-full h-screen flex justify-between items-center">
-      <div className="w-1/2 flex flex-col gap-6">
+    <div className="lg:p-32 p-24 bg-home-bg w-full h-screen flex justify-between items-center">
+      <div className="xl:w-1/2 flex flex-col gap-6">
         <div>
           <Text text="Hi, I'm " style={["home-title"]} />
           <Text text="Irem!" style={["home-title text-purple"]} />
@@ -49,7 +49,7 @@ const Home = () => {
           <Button
             text="Go to projects"
             style={[
-              "button bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
+              "button md: bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
             ]}
             to="/portfolio"
           />
@@ -67,7 +67,7 @@ const Home = () => {
           <Text text={"Beylikduzu,Istanbul"} style={["home-contact"]} />
         </div>
       </div>
-      <div className="hidden lg:block lg:w-1/3">
+      <div className="hidden xl:block lg:w-1/3">
         <Image
           source={irem}
           alt="irem koc"

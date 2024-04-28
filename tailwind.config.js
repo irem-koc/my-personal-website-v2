@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         neucha: ["Neucha", "cursive"],
         inter: ["Inter", "sans-serif"],
+        karla: ["Karla", "sans-serif"],
       },
       colors: {
         "custom-color": "rgba(19,15,73,0.07)",
@@ -16,6 +17,10 @@ export default {
         orange: "#FF972D",
         "light-grey": "#F3F3F6",
         "home-bg": "#EFFBF8",
+        "about-bg": "#FFFBF3",
+        "experiences-bg": "#F8FFF3",
+        "portfolio-bg": "#FFF5F6",
+        "contact-bg": "#E9F9FF",
       },
     },
   },

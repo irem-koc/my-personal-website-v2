@@ -40,4 +40,13 @@
   .home-contact {
     @apply text-dark-blue font-semibold leading-8;
   }
+  .about-top-text {
+    @apply leading-4;
+  }
+  .about-title {
+    @apply text-4xl font-bold text-dark-blue leading-normal;
+  }
+  .about-sub-text {
+    @apply font-karla font-semibold text-xl text-dark-blue;
+  }
 }
