@@ -7,6 +7,7 @@ import { Context } from "@context/Context";
 import React, { useContext } from "react";
 import TextTransition, { presets } from "react-text-transition";
 
+// TODO: fix mobile screen responsiveness
 const Home = () => {
   const { name } = useContext(Context);
   const TEXTS = ["Coder", "Developer", "Engineer"];

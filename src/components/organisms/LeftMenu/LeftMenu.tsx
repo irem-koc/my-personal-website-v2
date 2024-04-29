@@ -2,7 +2,7 @@ import iremkoclogo from "@assets/iremkoc-logo.png";
 import Image from "@atoms/Image/Image";
 import Text from "@components/atoms/Text/Text";
 import { Context } from "@context/Context";
-import Footer from "@molecules/LeftMenu/Footer/Footer";
+import Footer from "@molecules/LeftMenu/Footer";
 import { useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
