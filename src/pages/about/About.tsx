@@ -8,8 +8,8 @@ const About = (props: Props) => {
   const {} = props;
   return (
     <div className="lg:p-24 p-24 bg-about-bg w-full h-screen flex justify-between items-start">
-      <div>
-        <div className="col-start">
+      <div className="row-between">
+        <div className="col-start w-1/3">
           <Text text="- NICE TO MEET YOU!" style={["about-top-text"]} />
           <Title text={"Irem Koc"} style={["about-title"]} />
           <Text
@@ -24,39 +24,68 @@ const About = (props: Props) => {
             to={"/portfolio"}
           />
         </div>
-        <div>
-          <Text text={"Hello there! My name is "} style={[]} />
-          <Text text={"Irem Koc"} style={["text-orange"]} />
-          <Text
-            text={
-              ". As a software engineer with a focus on frontend development, I bring a strong dedication and a wealth of experience to my work. "
-            }
-            style={[]}
-          />
-          <Text
-            text={
-              "With a solid foundation in technologies like React, React Native (both CLI and Expo), TypeScript, and Redux Toolkit, I am well-equipped to deliver robust and user-friendly applications. "
-            }
-            style={[]}
-          />
-          <Text
-            text={
-              "In addition to my frontend expertise, I also have experience with backend development using Spring Boot, which allows me to understand and contribute to different layers of a software project. "
-            }
-            style={[]}
-          />
-          <Text
-            text={
-              "I am passionate about every step of the software development process, from initial discussion and collaboration to the final stages of deployment. "
-            }
-            style={[]}
-          />
-          <Text
-            text={
-              "With over 2 years of experience in the field, I have honed the skills necessary to bring your project to success. I look forward to the opportunity to leverage my skills and enthusiasm to contribute to your team."
-            }
-            style={[]}
-          />
+        <div className="w-4/6">
+          <div>
+            <Text text={"Hello there! My name is "} style={[]} />
+            <Text text={"Irem Koc"} style={["text-orange"]} />
+            <Text
+              text={
+                ". As a software engineer with a focus on frontend development, I bring a strong dedication and a wealth of experience to my work. "
+              }
+              style={[]}
+            />
+            <Text
+              text={
+                "With a solid foundation in technologies like React, React Native (both CLI and Expo), TypeScript, and Redux Toolkit, I am well-equipped to deliver robust and user-friendly applications. "
+              }
+              style={[]}
+            />
+            <Text
+              text={
+                "In addition to my frontend expertise, I also have experience with backend development using Spring Boot, which allows me to understand and contribute to different layers of a software project. "
+              }
+              style={[]}
+            />
+            <Text
+              text={
+                "I am passionate about every step of the software development process, from initial discussion and collaboration to the final stages of deployment. "
+              }
+              style={[]}
+            />
+            <Text
+              text={
+                "With over 2 years of experience in the field, I have honed the skills necessary to bring your project to success. I look forward to the opportunity to leverage my skills and enthusiasm to contribute to your team."
+              }
+              style={[]}
+            />
+          </div>
+          <div className="row-between">
+            <div className="col-center">
+              <Text text={"AGE"} style={["underline"]} />
+              <Text text={"22"} style={["font-bold text-dark-blue"]} />
+            </div>
+            <div className="col-center">
+              <Text text={"BORN IN"} style={["underline"]} />
+              <Text
+                text={"Istanbul, Turkey"}
+                style={["font-bold text-dark-blue"]}
+              />
+            </div>
+            <div className="col-center">
+              <Text text={"MAIL"} style={["underline"]} />
+              <Text
+                text={"kociremx@gmail.com"}
+                style={["font-bold text-dark-blue"]}
+              />
+            </div>
+            <div className="col-start">
+              <Text text={"PHONE"} style={["underline"]} />
+              <Text
+                text={"+90 5539753691"}
+                style={["font-bold text-dark-blue"]}
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div></div>

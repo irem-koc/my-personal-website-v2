@@ -15,6 +15,9 @@
   .row-center {
     @apply flex items-center justify-center;
   }
+  .row-between {
+    @apply flex items-start justify-between;
+  }
   .big-irem {
     @apply font-neucha italic text-4xl text-custom-color mx-auto;
   }
