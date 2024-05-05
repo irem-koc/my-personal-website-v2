@@ -55,4 +55,10 @@
   .about-sub-text {
     @apply font-karla font-semibold text-xl text-dark-blue;
   }
+  .about-info-text {
+    @apply leading-8;
+  }
+  .info-card {
+    @apply py-7 px-5 w-1/3;
+  }
 }
