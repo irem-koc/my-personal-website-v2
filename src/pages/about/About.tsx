@@ -20,7 +20,7 @@ const About = (props: Props) => {
           <Button
             text={"View all projects"}
             style={[
-              "button md: bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
+              "button mt-2 md:bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
             ]}
             to={"/portfolio"}
           />
