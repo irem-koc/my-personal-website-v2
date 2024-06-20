@@ -1,14 +1,14 @@
 import Button from "@atoms/Button/Button";
 import Text from "@atoms/Text/Text";
 import Title from "@atoms/Title/Title";
-import InfoCard from "@molecules/About/InfoCard";
+import InfoCard from "@components/molecules/InfoCard/InfoCard";
 
 type Props = {};
 
 const About = (props: Props) => {
   const {} = props;
   return (
-    <div className="lg:p-24 p-24 bg-about-bg w-full h-screen flex flex-col justify-around">
+    <div className="lg:p-28 p-32 bg-about-bg w-full h-screen flex flex-col justify-around">
       <div className="row-between">
         <div className="col-start w-1/3">
           <Text text="- NICE TO MEET YOU!" style={["about-top-text"]} />
@@ -20,12 +20,12 @@ const About = (props: Props) => {
           <Button
             text={"View all projects"}
             style={[
-              "button mt-2 md:bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
+              "button mt-8 md:bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
             ]}
             to={"/portfolio"}
           />
         </div>
-        <div className="w-4/6">
+        <div className="w-5/6">
           <div>
             <Text
               text={"Hello there! My name is "}
