@@ -1,5 +1,5 @@
+import { ContextType } from "@types/ContextType";
 import React from "react";
-import { ContextType } from "../types/ContextType";
 
 export const Context = React.createContext<ContextType | null>(null);
 const ContextProvider: React.FC<{ children: React.ReactNode }> = ({
