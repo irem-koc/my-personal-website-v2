@@ -15,7 +15,7 @@ const ExperienceCard = ({ experience, onClick }) => {
       </span>
       <p className="mb-3">{description && description.substr(0, 70) + "..."}</p>
       <div className="underline"></div>
-      <p className="absolute rounded p-1 right-3 bottom-3 flex items-center gap-1 read-more">
+      <p className="absolute border border-dashed border-gray-600 rounded p-1 right-3 bottom-3 flex items-center gap-1 read-more">
         Read More{" "}
         <span>
           <FaArrowRight fill="black" />
