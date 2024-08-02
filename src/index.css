@@ -59,6 +59,6 @@
     @apply leading-8 mb-8;
   }
   .info-card {
-    @apply p-10 w-1/3 flex flex-col justify-center items-center rounded-md;
+    @apply p-8 w-1/3 h-[192px] flex flex-col justify-center items-center rounded-md hover:shadow-xl;
   }
 }
