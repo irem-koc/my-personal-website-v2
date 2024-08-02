@@ -15,6 +15,10 @@ export default defineConfig({
       "@components": path.resolve(__dirname, "./src/components"),
       "@pages": path.resolve(__dirname, "./src/pages"),
       "@context": path.resolve(__dirname, "./src/context"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
+      "@types": path.resolve(__dirname, "./src/types"),
+
+
     },
   },
   plugins: [react()],

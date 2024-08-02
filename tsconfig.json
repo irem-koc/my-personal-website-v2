@@ -29,7 +29,10 @@
       "@molecules/*": ["src/components/molecules/*"],
       "@organisms/*": ["src/components/organisms/*"],
       "@pages/*": ["src/pages/*"],
-      "@context/*": ["src/context/*"]
+      "@context/*": ["src/context/*"],
+      "@utils/*": ["src/utils/*"],
+      "@types/*": ["src/types/*"]
+
     }
   },
   "include": ["src"],
