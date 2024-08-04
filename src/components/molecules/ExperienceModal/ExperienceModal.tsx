@@ -9,7 +9,7 @@ const ExperienceModal = ({ experience, onClose }) => {
   return (
     <div className="modal-overlay overflow-hidden" onClick={onClose}>
       <div
-        className="modal-content bg-indigo-300 text-white"
+        className="modal-content bg-indigo-300 text-white hover:cursor-pointer"
         onClick={(e) => e.stopPropagation()}
       >
         <button className="modal-close" onClick={onClose}>
@@ -34,7 +34,7 @@ const ExperienceModal = ({ experience, onClose }) => {
           {experience.startDate} - {experience.endDate}
         </span>
         <p className="my-3 flex">{experience.description}</p>
-        <p className="flex items-center text-sm">
+        <p className="flex items-center gap-1 text-sm">
           <span>
             <IoLocationOutline />
           </span>

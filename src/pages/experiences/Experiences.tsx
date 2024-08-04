@@ -4,22 +4,29 @@ import Title from "@components/atoms/Title/Title";
 import ExperienceCard from "@components/molecules/ExperienceCard/ExperienceCard";
 import ExperienceModal from "@components/molecules/ExperienceModal/ExperienceModal";
 import { Experience } from "@types/experience";
-import getData from "@utils/getData";
 import { useEffect, useState } from "react";
-
+import mock from "../../../mock.json";
 const Experiences = () => {
-  const [experiences, setExperiences] = useState<Experience[]>([]);
+  const [experiences, setExperiences] = useState<Experience[]>();
   const [selectedExperience, setSelectedExperience] =
     useState<Experience | null>(null);
-
+  console.log(mock.experiences, " is that");
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getData();
+      const data = await mock.experiences;
       setExperiences(data);
     };
-
     fetchData();
   }, []);
+  //TODO: json-server netlify step maybe throw error
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await getData();
+  //     setExperiences(data);
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   const handleCardClick = (experience: Experience) => {
     setSelectedExperience(experience);
@@ -40,13 +47,13 @@ const Experiences = () => {
           <Link
             text={"kociremx@gmail.com"}
             href={"mailto:kociremx@gmail.com"}
-            style={["home-contact hover:orange-border"]}
+            style={["home-contact hover:translate-x-0"]}
           />
         </div>
       </div>
       <div className="row-between-wrap mt-7">
-        {experiences.length > 0 &&
-          experiences.map((experience: Experience, index) => (
+        {experiences?.length > 0 &&
+          experiences?.map((experience: Experience, index) => (
             <ExperienceCard
               key={index}
               experience={experience}

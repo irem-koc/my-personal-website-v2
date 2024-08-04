@@ -1,5 +1,4 @@
 import { FaArrowRight } from "react-icons/fa";
-import { Experience } from "src/types/experience";
 
 const ExperienceCard = ({ experience, onClick }) => {
   const { company, title, startDate, endDate, description } = experience;
@@ -14,9 +13,9 @@ const ExperienceCard = ({ experience, onClick }) => {
         {startDate} - {endDate}
       </span>
       <p className="mb-3">{description && description.substr(0, 70) + "..."}</p>
-      <div className="underline"></div>
+      <div className="effect-underline"></div>
       <p className="absolute border border-dashed border-gray-600 rounded p-1 right-3 bottom-3 flex items-center gap-1 read-more">
-        Read More{" "}
+        Read More
         <span>
           <FaArrowRight fill="black" />
         </span>
