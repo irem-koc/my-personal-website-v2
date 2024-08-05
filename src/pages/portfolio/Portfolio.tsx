@@ -16,14 +16,14 @@ const Portfolio = (props: Props) => {
     fetchData();
   }, []);
   return (
-    <div className=" p-24 bg-portfolio-bg w-full h-screen flex-col justify-between items-center">
+    <div className="p-24 bg-portfolio-bg overflow-visible w-full min-h-full flex-col justify-between items-center">
       <div className="row-between">
         <div className="header">
           <Text text="- PROJECTS" style={["about-top-text"]} />
           <Title text={"Recent completed works"} style={["about-title"]} />
         </div>
       </div>
-      <div className="row-between-wrap">
+      <div className="row-between-wrap mt-7">
         {projects?.length > 0 &&
           projects?.map((project, index) => (
             <PortfolioCard key={index} project={project} />
