@@ -71,6 +71,6 @@
     @apply flex flex-col gap-3 border border-purple w-[20rem] h-[18rem] rounded-md cursor-pointer p-8  mr-4 my-3;
   }
   .portfolio-card{
-    @apply flex flex-col rounded-full gap-3  w-[20rem] h-[18rem] cursor-pointer p-2  mr-4 my-3;
+    @apply flex flex-col rounded-full gap-3 md:w-full  lg:max-w-full xl:max-w-[28rem] h-[23rem] cursor-pointer p-2  mr-4 my-3;
   }
 }
