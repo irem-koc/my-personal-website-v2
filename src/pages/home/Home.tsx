@@ -50,7 +50,7 @@ const Home = () => {
           <Button
             text="Go to projects"
             style={[
-              "button md: bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
+              "button md:bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
             ]}
             to="/portfolio"
           />
