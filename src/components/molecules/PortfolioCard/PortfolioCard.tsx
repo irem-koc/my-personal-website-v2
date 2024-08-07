@@ -18,7 +18,7 @@ const PortfolioCard = ({ project }: Props) => {
       <div>
         <img
           className="w-full object-cover h-40 rounded"
-          src={project.thumbnail}
+          src="../../../assets/productSearchManager.png"
           alt={project.title}
         />
         <p className="flex gap-1 items-center font-semibold italic text-black text-base mt-2">
