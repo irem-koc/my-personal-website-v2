@@ -2,7 +2,7 @@ import Text from "@components/atoms/Text/Text";
 import Title from "@components/atoms/Title/Title";
 import PortfolioCard from "@components/molecules/PortfolioCard/PortfolioCard";
 import { useEffect, useState } from "react";
-import mock from "./../../../mock.json";
+import mock from "../../../mock.json";
 
 const Portfolio = () => {
   const [projects, setProjects] = useState<
