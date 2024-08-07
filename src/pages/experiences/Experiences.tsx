@@ -10,7 +10,6 @@ const Experiences = () => {
   const [experiences, setExperiences] = useState<Experience[]>();
   const [selectedExperience, setSelectedExperience] =
     useState<Experience | null>(null);
-  console.log(mock.experiences, " is that");
   useEffect(() => {
     const fetchData = async () => {
       const data = await mock.experiences;
