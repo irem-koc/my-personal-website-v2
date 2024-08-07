@@ -5,7 +5,7 @@ import ExperienceCard from "@components/molecules/ExperienceCard/ExperienceCard"
 import ExperienceModal from "@components/molecules/ExperienceModal/ExperienceModal";
 import { useEffect, useState } from "react";
 import { Experience } from "src/types/type";
-import mock from "../../../mock.json";
+import mock from "./../../../mock.json";
 const Experiences = () => {
   const [experiences, setExperiences] = useState<Experience[]>();
   const [selectedExperience, setSelectedExperience] =

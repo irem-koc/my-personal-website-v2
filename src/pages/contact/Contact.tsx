@@ -5,12 +5,12 @@ import { useRef } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
+  const form = useRef<HTMLFormElement | null>(null);
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_55594ng", "template_4kfjmt5", form.current, {
+      .sendForm("service_55594ng", "template_4kfjmt5", form.current || "", {
         publicKey: "yvwE0TUb1fcqRImzY",
       })
       .then(
@@ -21,7 +21,7 @@ const Contact = () => {
           toast.error("Successfully toasted!");
         }
       );
-    e.target.reset();
+    (e.target as HTMLFormElement).reset();
   };
   return (
     <div className="p-24 bg-contact-bg w-full overflow-visible min-h-full flex flex-col gap-3">

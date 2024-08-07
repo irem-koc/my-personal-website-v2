@@ -2,14 +2,32 @@ import Text from "@components/atoms/Text/Text";
 import Title from "@components/atoms/Title/Title";
 import PortfolioCard from "@components/molecules/PortfolioCard/PortfolioCard";
 import { useEffect, useState } from "react";
-import mock from "../../../mock.json";
+import mock from "./../../../mock.json";
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<
+    {
+      id: number;
+      title: string;
+      thumbnail: string;
+      githubUrl: string;
+      figmaUrl: string;
+      usedLanguages: string[];
+    }[]
+  >([]);
   useEffect(() => {
     const fetchData = async () => {
       const data = await mock.projects;
-      setProjects(data);
+      setProjects(
+        data as {
+          id: number;
+          title: string;
+          thumbnail: string;
+          githubUrl: string;
+          figmaUrl: string;
+          usedLanguages: string[];
+        }[]
+      );
     };
     fetchData();
   }, []);
