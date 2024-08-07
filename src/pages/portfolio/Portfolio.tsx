@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import Text from "@components/atoms/Text/Text";
 import Title from "@components/atoms/Title/Title";
 import PortfolioCard from "@components/molecules/PortfolioCard/PortfolioCard";

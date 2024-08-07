@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import Link from "@components/atoms/Link/Link";
 import Text from "@components/atoms/Text/Text";
 import Title from "@components/atoms/Title/Title";
