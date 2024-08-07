@@ -86,7 +86,7 @@
         {
             "id": 1,
             "title": "Product Search Manager",
-            "thumbnail": "src/assets/productSearchManager.png",
+            "thumbnail": "../../../assets/productSearchManager.png",
             "githubUrl": "https://github.com/irem-koc/product-search-manager",
             "figmaUrl": "",
             "usedLanguages": [
@@ -98,7 +98,7 @@
         {
             "id": 2,
             "title": "Country Search App",
-            "thumbnail": "src/assets/countrySearchApp.png",
+            "thumbnail": "../../../assets/countrySearchApp.png",
             "githubUrl": "https://github.com/irem-koc/graphql-react",
             "figmaUrl": "",
             "usedLanguages": [
@@ -114,7 +114,7 @@
         {
             "id": 3,
             "title": "Article Review App(Grad. Thesis Project)",
-            "thumbnail": "src/assets/araApp.png",
+            "thumbnail": "../../../assets/araApp.png",
             "githubUrl": "https://github.com/irem-koc/bitirme-article-review-app",
             "figmaUrl": "https://www.figma.com/design/ptsnlAvmGR7ITJxX7DytGZ/review-app?node-id=0-1",
             "usedLanguages": [
@@ -135,7 +135,7 @@
         {
             "id": 4,
             "title": "RickandMorty App",
-            "thumbnail": "src/assets/rickAndMorty.png",
+            "thumbnail": "../../../assets/rickAndMorty.png",
             "githubUrl": "https://github.com/irem-koc/rickandmorty",
             "figmaUrl": "",
             "usedLanguages": [
@@ -150,7 +150,7 @@
         {
             "id": 5,
             "title": "Minitube Trainig App",
-            "thumbnail": "src/assets/minitube.png",
+            "thumbnail": "../../../assets/minitube.png",
             "githubUrl": "https://github.com/irem-koc/rtk-query-project",
             "figmaUrl": "",
             "usedLanguages": [
@@ -164,7 +164,7 @@
         {
             "id": 6,
             "title": "Student Record System",
-            "thumbnail": "src/assets/studentApp.png",
+            "thumbnail": "../../../assets/studentApp.png",
             "githubUrl": "https://github.com/irem-koc/springboot-react-studentApp",
             "figmaUrl": "",
             "usedLanguages": [
