@@ -73,4 +73,8 @@
   .portfolio-card{
     @apply flex flex-col rounded-full gap-3 md:w-full  lg:max-w-full xl:max-w-[28rem] h-[23rem] cursor-pointer p-2  mr-4 my-3;
   }
+  .buton-style{
+    @apply button md:bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue hover:cursor-pointer
+              
+  }
 }
