@@ -1,0 +1,177 @@
+{
+    "experiences": [
+        {
+            "id": 1,
+            "title": "Frontend Developer",
+            "company": "Fibabanka",
+            "location": "Istanbul, Turkey",
+            "startDate": "2024'Mar",
+            "endDate": "Present",
+            "description": "I started working full-time in the Ecosystem Banking team at Fibabanka during my senior year of university. Since I had a flexible schedule with only my thesis left to complete, I focused entirely on my job as the best way to develop my skills. I played an active role in the mobile and web development of the applications we created. We use modern technologies, and I worked with libraries such as React.js, TypeScript, TailwindCSS, React Native, Tanstack Query, and Next.js. Using React Native, I experienced mobile development for the first time and quickly adapted to and learned the different technologies. I also had experience creating page components for iOS and Android based on Figma designs or business unit requests."
+        },
+        {
+            "id": 2,
+            "title": "Software Development Project Student",
+            "company": "BSH Ev Aletleri Türkiye",
+            "location": "Umraniye, Istanbul, Turkey",
+            "startDate": "2023'Jun",
+            "endDate": "2024'May",
+            "description": "I worked as a software development intern in the COSMOS team for about six months. Here, I had the opportunity to work with the Agile management method through daily and retrospective meetings. Generally, I would meet with business units to understand their requests and then proceed with development based on those requirements. The main technologies I used were HTML, CSS, JavaScript, React.js, SQL, and .NET."
+        },
+        {
+            "id": 3,
+            "title": "Associate Inventory Planner",
+            "company": "Arçelik Global",
+            "location": "Hybrid",
+            "startDate": "2023'May",
+            "endDate": "2023'Jun",
+            "description": "In my third year at university, I gained my first full-time work experience at Arçelik, working for about five months as an assistant specialist in the Stock Planning team. Here, I took part in various report automation and optimization projects under the title of data governance. I worked mostly with Python and SQL, trying to automate Excel-based reports using Python. I also had the opportunity to work with files with the accdb extension in Python for the first time. For example, by extracting stock values at the beginning and end of the month, as well as sales and production values, from databases using SQL, I was able to generate Excel reports for each SKU (stock keeping unit) by executing the code I wrote in Python, replacing the manual process."
+        },
+        {
+            "id": 4,
+            "title": "Process Mining Intern",
+            "company": "Borusan Makina ve Güç Sistemleri / Caterpillar",
+            "location": "Hybrid",
+            "startDate": "2023'Apr",
+            "endDate": "2023'May",
+            "description": "I had a two-month internship experience in the field of process mining within the RPA (Robotic Process Automation) team. Here, I received training in Celonis and learned the fundamentals of process mining. Later, in line with my career goals and expectations, I realized that software development was more suitable for me."
+        },
+        {
+            "id": 5,
+            "title": "Frontend Developer Intern",
+            "company": "IBTECH A.S.",
+            "location": "Gebze, Kocaeli, Turkey",
+            "startDate": "2022'Oct",
+            "endDate": "2023'Apr",
+            "description": "Ibtech, the Information Technology firm of QNB Finansbank, was where I spent about seven months as a software development intern in the Corporate Web & Mobile Development team, specializing in the field I wanted to advance in. The developments here were carried out on sites and applications used by internal employees. For the Career Portal website, which I developed and delivered based on a request from the Human Resources team, I occasionally met with the designer to convey the department's expectations. I automated the slider display for specific times using JavaScript, ensuring it operated without manual intervention. Additionally, I was involved in bug fixes based on incoming requests. The technologies I used include HTML, CSS, JavaScript, Angular, Bootstrap, jQuery, SQL, and .NET."
+        },
+        {
+            "id": 6,
+            "title": "Production Intern",
+            "company": "Kromaş",
+            "location": "Silivri, Istanbul, Turkey",
+            "startDate": "2022'Jul",
+            "endDate": "2022'Aug",
+            "description": "I worked in the Integrated Management System & Quality Control departments during my mandatory internship. My responsibilities included: creating and rearranging checklists, entering data into the DSM software system, visualizing data from Excel, learning and controlling production processes"
+        },
+        {
+            "id": 7,
+            "title": "Planning Engineering Project Student",
+            "company": "BSH Turkey",
+            "location": "Tekirdağ, Turkey",
+            "startDate": "2021'Nov",
+            "endDate": "2022'Feb",
+            "description": "I was part of the planning team in the R&D department at a washing machine factory. With the one-week training I received on the SAP PP module, I actively participated in creating the Bill of Materials (BOM) and material codes for washing machines. Task management and tracking were carried out through Jira, and we reported our status through daily stand-ups. At the same time, I successfully managed both school and work, achieving a GPA of 3.50. I gained valuable experience in taking responsibility and tracking tasks. Knowing that the tasks I was responsible for could have significant cost implications for the factory, I aimed to complete them as accurately and carefully as possible."
+        },
+        {
+            "id": 8,
+            "title": "Finans101 Online Staj",
+            "company": "QNB Finansbank",
+            "location": "Remote",
+            "startDate": "2021'Apr",
+            "endDate": "2021'Apr",
+            "description": "During this one-month internship conducted by QNB Finansbank, I learned how to shape my career through various panels and speakers, and I closely observed banking technologies and terms through articles and an online education platform. Just like in my online internship at DenizBank, I demonstrated my knowledge in the online test conducted at the end of the internship here as well and earned a certificate."
+        },
+        {
+            "id": 9,
+            "title": "DenizAşırı Online Staj Programı",
+            "company": "DenizBank",
+            "location": "Remote",
+            "startDate": "2020'Oct",
+            "endDate": "2020'Nov",
+            "description": "During this one-month online internship conducted by DenizBank, I learned various financial terms, banking functions, and the technological advancements that DenizBank has prioritized in recent years. It was an internship program where I closely learned the requirements of professional life. I also earned a certificate by passing the exam at the end of the internship."
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Product Search Manager",
+            "thumbnail": "src/assets/1.png",
+            "githubUrl": "https://github.com/irem-koc/product-search-manager",
+            "figmaUrl": "",
+            "usedLanguages": [
+                "React.js",
+                "Context Api",
+                "React Router"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Country Search App",
+            "thumbnail": "src/assets/2.png",
+            "githubUrl": "https://github.com/irem-koc/graphql-react",
+            "figmaUrl": "",
+            "usedLanguages": [
+                "React.js",
+                "TailwindCSS",
+                "TypeScript",
+                "Vite Bundler",
+                "GraphQL",
+                "React Router",
+                "Context Api"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Article Review App(Grad. Thesis Project)",
+            "thumbnail": "src/assets/3.png",
+            "githubUrl": "https://github.com/irem-koc/bitirme-article-review-app",
+            "figmaUrl": "https://www.figma.com/design/ptsnlAvmGR7ITJxX7DytGZ/review-app?node-id=0-1",
+            "usedLanguages": [
+                "React.js",
+                "Redux",
+                "TypeScript",
+                "TailwindCSS",
+                "Axios",
+                "Atomic Design",
+                "React Router",
+                "Context Api",
+                "Local Storage",
+                "Java Spring Boot",
+                "Redis",
+                "Spring Security"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "RickandMorty App",
+            "thumbnail": "src/assets/4.png",
+            "githubUrl": "https://github.com/irem-koc/rickandmorty",
+            "figmaUrl": "",
+            "usedLanguages": [
+                "React.js",
+                "TypeScript",
+                "Axios",
+                "Context Api",
+                "React Router",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Minitube Trainig App",
+            "thumbnail": "src/assets/5.png",
+            "githubUrl": "https://github.com/irem-koc/rtk-query-project",
+            "figmaUrl": "",
+            "usedLanguages": [
+                "React.js",
+                "Redux Toolkit Query",
+                "TailwindCSS",
+                "Vite",
+                "json-server"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Student Record System",
+            "thumbnail": "src/assets/6.png",
+            "githubUrl": "https://github.com/irem-koc/springboot-react-studentApp",
+            "figmaUrl": "",
+            "usedLanguages": [
+                "React.js",
+                "Material-UI",
+                "Java Spring Boot"
+            ]
+        }
+    ]
+}
