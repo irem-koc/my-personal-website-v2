@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
-import useMousePosition from "../../../hooks/useMousePosition.js";
-import { MouseContext } from "../../../context/mouse-context.js";
+import { useContext } from "react";
+import { MouseContext } from "./../../../context/mouse-context";
+import useMousePosition from "./../../../hooks/useMousePosition";
 
-type Props = {};
-
-const DotRing = (props: Props) => {
+const DotRing = () => {
   const { x, y } = useMousePosition();
   const { cursor } = useContext(MouseContext);
   return (
