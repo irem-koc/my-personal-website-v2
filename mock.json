@@ -86,7 +86,7 @@
         {
             "id": 1,
             "title": "Product Search Manager",
-            "thumbnail": "src/assets/1.png",
+            "thumbnail": "../../../assets/1.png",
             "githubUrl": "https://github.com/irem-koc/product-search-manager",
             "figmaUrl": "",
             "usedLanguages": [
