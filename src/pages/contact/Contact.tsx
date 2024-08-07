@@ -1,12 +1,31 @@
-import Button from "@components/atoms/Button/Button";
 import Text from "@components/atoms/Text/Text";
 import Title from "@components/atoms/Title/Title";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
-type Props = {};
+const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-const Contact = (props: Props) => {
+    emailjs
+      .sendForm("service_55594ng", "template_4kfjmt5", form.current, {
+        publicKey: "yvwE0TUb1fcqRImzY",
+      })
+      .then(
+        () => {
+          toast.success("Your message sent successfully!");
+        },
+        () => {
+          toast.error("Successfully toasted!");
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="p-24 bg-contact-bg w-full overflow-visible min-h-full flex flex-col gap-3">
+      <Toaster />
       <div className="row-between gap-10">
         <div className="lg:w-3/6">
           <div className="header">
@@ -33,29 +52,29 @@ const Contact = (props: Props) => {
           </div>
         </div>
         <div className="hidden lg:flex xl:w-3/6 lg:w-3/6 md:w-4/6  flex-col items-center gap-4">
-          <input
-            className="w-5/6 h-14 p-4 outline-none border focus:border-gray-400"
-            type="text"
-            placeholder="Enter your name"
-          />
-          <input
-            className="w-5/6 h-14 p-4 outline-none border focus:border-gray-400"
-            type="text"
-            placeholder="Your email"
-          />
-          <textarea
-            className="w-5/6 p-4 outline-none border focus:border-gray-400"
-            name=""
-            id=""
-            placeholder="Write something.."
-          ></textarea>
-          <Button
-            text={"Submit"}
-            style={[
-              "button md:bg-dark-blue text-white hover:bg-transparent hover:text-dark-blue hover:border hover:border-dark-blue",
-            ]}
-            to={"/"}
-          />
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              className="w-5/6 h-14 p-4 mb-3 outline-none border focus:border-gray-400"
+              type="text"
+              placeholder="Enter your name"
+              name="user_name"
+              required
+            />
+            <input
+              className="w-5/6 h-14 p-4 mb-3 outline-none border focus:border-gray-400"
+              type="email"
+              placeholder="Your email"
+              name="user_email"
+              required
+            />
+            <textarea
+              className="w-5/6 p-4 outline-none border mb-3 focus:border-gray-400"
+              name="message"
+              placeholder="Write something.."
+              required
+            ></textarea>
+            <input className="buton-style" type="submit" value="Submit" />
+          </form>
         </div>
       </div>
       <div className="w-full h-1/2">
