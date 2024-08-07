@@ -1,6 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
-
-const ExperienceCard = ({ experience, onClick }) => {
+import { Experience } from "src/types/type";
+type Props = {
+  experience: Experience;
+  onClick: (experience: Experience) => void;
+};
+const ExperienceCard = ({ experience, onClick }: Props) => {
   const { company, title, startDate, endDate, description } = experience;
   return (
     <div

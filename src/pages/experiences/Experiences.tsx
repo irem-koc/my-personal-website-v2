@@ -3,8 +3,8 @@ import Text from "@components/atoms/Text/Text";
 import Title from "@components/atoms/Title/Title";
 import ExperienceCard from "@components/molecules/ExperienceCard/ExperienceCard";
 import ExperienceModal from "@components/molecules/ExperienceModal/ExperienceModal";
-import { Experience } from "@types/experience";
 import { useEffect, useState } from "react";
+import { Experience } from "src/types/type";
 import mock from "../../../mock.json";
 const Experiences = () => {
   const [experiences, setExperiences] = useState<Experience[]>();
@@ -52,7 +52,8 @@ const Experiences = () => {
         </div>
       </div>
       <div className="row-between-wrap mt-7">
-        {experiences?.length > 0 &&
+        {experiences &&
+          experiences?.length > 0 &&
           experiences?.map((experience: Experience, index) => (
             <ExperienceCard
               key={index}
