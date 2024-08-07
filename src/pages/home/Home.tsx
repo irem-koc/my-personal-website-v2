@@ -3,13 +3,11 @@ import Button from "@atoms/Button/Button";
 import Image from "@atoms/Image/Image";
 import Text from "@atoms/Text/Text";
 import Title from "@atoms/Title/Title";
-import { Context } from "@context/Context";
-import React, { useContext } from "react";
+import React from "react";
 import TextTransition, { presets } from "react-text-transition";
 
 // TODO: fix mobile screen responsiveness
 const Home = () => {
-  const { name } = useContext(Context);
   const TEXTS = ["Coder", "Developer", "Engineer"];
   const [index, setIndex] = React.useState(0);
 

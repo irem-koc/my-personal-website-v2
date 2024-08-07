@@ -3,10 +3,7 @@ import Text from "@atoms/Text/Text";
 import Title from "@atoms/Title/Title";
 import InfoCard from "@components/molecules/InfoCard/InfoCard";
 
-type Props = {};
-
-const About = (props: Props) => {
-  const {} = props;
+const About = () => {
   return (
     <div className="lg:p-28 p-32 bg-about-bg w-full h-screen flex flex-col justify-around">
       <div className="row-between">

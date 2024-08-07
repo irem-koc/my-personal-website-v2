@@ -4,9 +4,7 @@ import PortfolioCard from "@components/molecules/PortfolioCard/PortfolioCard";
 import { useEffect, useState } from "react";
 import mock from "../../../mock.json";
 
-type Props = {};
-
-const Portfolio = (props: Props) => {
+const Portfolio = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const fetchData = async () => {

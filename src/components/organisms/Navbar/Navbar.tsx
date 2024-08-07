@@ -1,7 +1,4 @@
-type Props = {};
-
-const Navbar = (props: Props) => {
-  const {} = props;
+const Navbar = () => {
   return <div>Navbar</div>;
 };
 
