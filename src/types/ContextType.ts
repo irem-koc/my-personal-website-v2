@@ -1,5 +1,4 @@
 export type ContextType = {
-  //   todos: ITodo[];
-  //   saveTodo: (todo: ITodo) => void;
-  //   updateTodo: (id: number) => void;
+  activeTab:string;
+   setActiveTab:React.Dispatch<React.SetStateAction<string>>
 };

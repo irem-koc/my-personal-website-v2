@@ -5,9 +5,10 @@ import Footer from "@components/molecules/Footer/Footer";
 import { Context } from "@context/Context";
 import { useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { ContextType } from "src/types/ContextType";
 
 const LeftMenu = () => {
-  const { activeTab, setActiveTab } = useContext(Context);
+  const { activeTab, setActiveTab } = useContext(Context) as ContextType;
   const location = useLocation();
 
   useEffect(() => {

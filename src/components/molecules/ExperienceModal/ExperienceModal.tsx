@@ -2,8 +2,13 @@ import { BsCalendarDateFill } from "react-icons/bs";
 import { FaArrowsToDot } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdConfirmationNumber } from "react-icons/md";
+import { Experience } from "src/types/type";
+type Props = {
+  experience: Experience;
+  onClose: () => void;
+};
 
-const ExperienceModal = ({ experience, onClose }) => {
+const ExperienceModal = ({ experience, onClose }: Props) => {
   if (!experience) return null;
 
   return (
