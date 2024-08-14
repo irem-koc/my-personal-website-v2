@@ -4,7 +4,7 @@ import Text from "@atoms/Text/Text";
 import Footer from "@components/molecules/Footer/Footer";
 import { Context } from "@context/Context";
 import { useContext, useEffect, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa"; // FaTimes ikonunu ekledik
 import { Link, useLocation } from "react-router-dom";
 import { ContextType } from "src/types/ContextType";
 
@@ -23,11 +23,18 @@ const LeftMenu = () => {
 
   return (
     <div className="md:sticky md:top-0 h-screen flex-shrink-0 bg-white z-50">
-      {/* Hamburger Icon for Mobile */}
-      <FaBars
-        className="absolute top-2 left-2 md:hidden text-2xl cursor-pointer"
-        onClick={toggleMenu}
-      />
+      {/* Hamburger Icon or Close Icon for Mobile */}
+      {isMenuOpen ? (
+        <FaTimes
+          className="absolute top-2 left-2 md:hidden text-2xl cursor-pointer"
+          onClick={toggleMenu}
+        />
+      ) : (
+        <FaBars
+          className="absolute top-2 left-2 md:hidden text-2xl cursor-pointer"
+          onClick={toggleMenu}
+        />
+      )}
 
       {/* Sidebar for Desktop and Fullscreen Menu for Mobile */}
       <div
@@ -35,10 +42,12 @@ const LeftMenu = () => {
           isMenuOpen ? "block" : "hidden"
         } md:block fixed md:relative top-0 left-0 w-full h-full md:w-auto md:h-auto bg-white z-50`}
       >
-        <FaBars
-          className="absolute top-2 left-2 md:hidden text-2xl cursor-pointer"
-          onClick={toggleMenu}
-        />
+        {isMenuOpen && (
+          <FaTimes
+            className="absolute top-2 left-2 md:hidden text-2xl cursor-pointer"
+            onClick={toggleMenu}
+          />
+        )}
         <div className="flex flex-col justify-between h-full p-8">
           <div className="flex flex-col items-center">
             <Image
@@ -56,7 +65,12 @@ const LeftMenu = () => {
             <Link to="/" onClick={toggleMenu}>
               <Text
                 text="Home"
-                style={["liste-item", activeTab === "/" ? "text-purple" : ""]}
+                style={[
+                  "liste-item",
+                  activeTab === "/" ? "text-purple" : "",
+                  "text-lg",
+                  "font-medium",
+                ]}
               />
             </Link>
             <Link to="/about" onClick={toggleMenu}>
@@ -65,6 +79,8 @@ const LeftMenu = () => {
                 style={[
                   "liste-item",
                   activeTab === "/about" ? "text-purple" : "",
+                  "text-lg",
+                  "font-medium",
                 ]}
               />
             </Link>
@@ -74,6 +90,8 @@ const LeftMenu = () => {
                 style={[
                   "liste-item",
                   activeTab === "/experiences" ? "text-purple" : "",
+                  "text-lg",
+                  "font-medium",
                 ]}
               />
             </Link>
@@ -83,6 +101,8 @@ const LeftMenu = () => {
                 style={[
                   "liste-item",
                   activeTab === "/portfolio" ? "text-purple" : "",
+                  "text-lg",
+                  "font-medium",
                 ]}
               />
             </Link>
@@ -92,6 +112,8 @@ const LeftMenu = () => {
                 style={[
                   "liste-item",
                   activeTab === "/contact" ? "text-purple" : "",
+                  "text-lg",
+                  "font-medium",
                 ]}
               />
             </Link>
