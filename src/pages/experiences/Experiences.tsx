@@ -7,10 +7,12 @@ import ExperienceModal from "@components/molecules/ExperienceModal/ExperienceMod
 import { useEffect, useState } from "react";
 import { Experience } from "src/types/type";
 import mock from "./../../../mock.json";
+
 const Experiences = () => {
   const [experiences, setExperiences] = useState<Experience[]>();
   const [selectedExperience, setSelectedExperience] =
     useState<Experience | null>(null);
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await mock.experiences;
@@ -18,15 +20,6 @@ const Experiences = () => {
     };
     fetchData();
   }, []);
-  //TODO: json-server netlify step maybe throw error
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await getData();
-  //     setExperiences(data);
-  //   };
-
-  //   fetchData();
-  // }, []);
 
   const handleCardClick = (experience: Experience) => {
     setSelectedExperience(experience);
@@ -37,13 +30,13 @@ const Experiences = () => {
   };
 
   return (
-    <div className="p-24 bg-experiences-bg overflow-visible w-full min-h-full flex-col justify-between items-center">
-      <div className="row-between">
-        <div className="header">
+    <div className="lg:p-24 p-8 bg-experiences-bg overflow-visible w-full min-h-screen flex flex-col justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between w-full items-center">
+        <div className="mb-8 md:mb-0">
           <Text text="- EXPERIENCES" style={["about-top-text"]} />
           <Title text={"My Experiences"} style={["about-title"]} />
         </div>
-        <div className="rowEnd">
+        <div className="flex justify-center md:justify-end w-full md:w-auto">
           <Link
             text={"kociremx@gmail.com"}
             href={"mailto:kociremx@gmail.com"}
@@ -51,7 +44,7 @@ const Experiences = () => {
           />
         </div>
       </div>
-      <div className="row-between-wrap mt-7">
+      <div className="flex flex-wrap justify-center md:justify-between w-full mt-7 gap-5">
         {experiences &&
           experiences?.length > 0 &&
           experiences?.map((experience: Experience, index) => (
