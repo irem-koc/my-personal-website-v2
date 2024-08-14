@@ -20,7 +20,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="lg:p-32 md:p-16 p-8 bg-home-bg w-full h-screen flex flex-col lg:flex-row justify-between items-center">
+    <div className="lg:p-32 md:p-16 p-10 bg-home-bg w-full h-screen flex flex-col lg:flex-row justify-between items-center">
       <div className="xl:w-1/2 w-full flex flex-col gap-6">
         <div>
           <Text text="Hi, I'm " style={["home-title"]} />
