@@ -14,7 +14,7 @@ type Props = {
 
 const PortfolioCard = ({ project }: Props) => {
   return (
-    <div className="portfolio-card p-4 border mb-7 rounded-lg shadow-md bg-white">
+    <div className="portfolio-card p-4 border mb-7 rounded-lg shadow-md bg-white w-full sm:w-72">
       <div>
         <img
           className="w-full object-cover h-40 rounded"
@@ -22,41 +22,40 @@ const PortfolioCard = ({ project }: Props) => {
           alt={project.title}
         />
         <p className="flex gap-1 items-center font-semibold italic text-black text-base mt-2">
-          <span className="mt-1 hover:transform-y-2">
+          <span className="mt-1">
             <IoCodeSlashOutline />
           </span>
           {project.title}
         </p>
       </div>
-      <div className="flex items-center mt-2">
+      <div className="flex items-center mt-2 justify-between">
         <div className="flex items-center">
           <Link
             text={"Go to Github repository"}
             href={project.githubUrl}
             style={["italic home-contact font-[13px] hover:translate-x-0"]}
           />
-          <span>
+          <span className="ml-1">
             <FaArrowRight fill="black" />
           </span>
         </div>
 
         {project.figmaUrl && (
-          <div className="flex gap-2 items-center ">
+          <div className="flex items-center">
             <Link
               text={"Take a look at Figma design"}
               href={project.figmaUrl}
               style={["italic home-contact font-[13px] hover:translate-x-0"]}
             />
-            <span>
+            <span className="ml-1">
               <FaFigma fill="black" />
             </span>
           </div>
         )}
       </div>
 
-      <div className="flex flex-wrap mt-1">
+      <div className="flex flex-wrap mt-3">
         <p className="font-semibold text-sm">Used Languages:</p>
-
         {project.usedLanguages.map((language, index) => (
           <span
             key={index}
@@ -66,7 +65,6 @@ const PortfolioCard = ({ project }: Props) => {
           </span>
         ))}
       </div>
-      <div className="mt-4"></div>
     </div>
   );
 };

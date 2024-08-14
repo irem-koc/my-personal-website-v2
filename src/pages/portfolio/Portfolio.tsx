@@ -33,14 +33,14 @@ const Portfolio = () => {
     fetchData();
   }, []);
   return (
-    <div className="p-24 bg-portfolio-bg overflow-visible w-full min-h-full flex-col justify-between items-center">
-      <div className="row-between">
-        <div className="header">
+    <div className="lg:p-24 p-8 bg-portfolio-bg overflow-visible w-full min-h-screen flex flex-col justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between w-full items-center">
+        <div className="header mb-8 md:mb-0">
           <Text text="- PROJECTS" style={["about-top-text"]} />
           <Title text={"Recent completed works"} style={["about-title"]} />
         </div>
       </div>
-      <div className="row-between-wrap mt-7">
+      <div className="flex flex-wrap justify-center md:justify-between w-full mt-7 gap-5">
         {projects?.length > 0 &&
           projects?.map((project, index) => (
             <PortfolioCard key={index} project={project} />
