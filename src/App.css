@@ -81,3 +81,13 @@ body {
 .home-contact:hover::after {
   animation: slide-in 0.3s forwards;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
